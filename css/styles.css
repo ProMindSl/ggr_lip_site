@@ -408,7 +408,7 @@ body, html
 }
 .content_block_3_2 .font_p
 {
-	margin: 5px 80px 0 80px;
+	margin: 4px 80px 0 80px;
 	color: #ffffff;
 }
 .content_block_3_2 .font_p:hover
@@ -420,7 +420,7 @@ body, html
 {
 	position: relative;
 	top: 5px;
-	margin: 0 0 0 -60px;
+	margin: 0 0 0 -70px;
 }
 
 .content_block_4_pic
@@ -439,23 +439,32 @@ body, html
 	vertical-align: top;
 	background: #007ac2;
 	text-align: center;
-	padding: 53px 0 0 0;
+	padding: 43px 0 0 0;
 	font: normal normal normal 22px/1.4em serif;
 	color: #ffffff;
 }
 .content_block_5_1_btn:hover
 {
-	background: #7f7871;
+	background: #00629b;;
 }
 
 .content_block_5_2
 {
+	box-sizing: border-box;
 	float: right;
 	height: 299px;
 	width: 383px;
 	text-align: left;
 	background: #f0f0f0;
 	vertical-align: top;
+}
+.content_block_5_2 > h6
+{
+	margin: 70px 70px 20px 70px;
+}
+.content_block_5_2 > p
+{
+	margin: 0 70px 70px 70px;
 }
 
 .content_block_5_3_pic

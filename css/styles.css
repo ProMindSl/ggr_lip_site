@@ -418,6 +418,8 @@ body, html
 
 .content_block_3_2 > img
 {
+	position: relative;
+	top: 5px;
 	margin: 0 0 0 -50px;
 }
 

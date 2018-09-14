@@ -22,6 +22,9 @@ body, html
   clear: both;
 }*/
 
+
+
+
 /* ========== Fonts ========== */
 .font_label
 {
@@ -460,6 +463,11 @@ body, html
 .content_block_5_2 > p
 {
 	margin: 0 70px 70px 70px;
+}
+
+.content_block_5_2 > p > ins:hover
+{
+	background: green;
 }
 
 .content_block_5_3_pic

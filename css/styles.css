@@ -35,7 +35,13 @@ body, html
     color: #555353;
 }
 
-
+.font_small_cont
+{
+	font-family: Tahoma;
+	font-size: 11px;
+	/*font-size: 0.9em;*/
+	line-height: 20px;
+}
 
 
 /* ======== View Containers ======= */
@@ -121,7 +127,7 @@ body, html
 {
 	position: absolute;
 	width: 100%;
-	height: 125px;
+	min-height: 125px;
 	background: #007ac2;;
 }
 
@@ -151,13 +157,12 @@ body, html
 .footer_cont
 {
     width: 980px;
+    min-height: 125px;
 	background: #007ac2;
-    padding: 100px 0;
-    padding: 50px 0;
-    font-size: 20px;
+    font-size: 0;
     line-height: 24px;
-    text-align: center;
-    text-transform: uppercase;
+    text-align: left;
+    background: red;
 }
 
 /* ======== Header elements ======= */
@@ -249,6 +254,14 @@ body, html
 	width: 100%;
 	text-align: left;
 }
+.content_blok_container:nth-child(2), /*там где внутри inline-block*/
+.content_blok_container:nth-child(3)
+{
+	font-size: 0;
+}
+
+
+
 /*.cont_b_conteiner_1
 {
 
@@ -332,7 +345,6 @@ body, html
 	width: 610px;
 	text-align: left;
 	background: #f0f0f0;
-	margin-left: -4px;
 	vertical-align: top;
 }
 
@@ -390,7 +402,7 @@ body, html
 	box-sizing: border-box;
 	width: 470px;
 	height: 259px;
-	margin-left: -5px;
+	/*margin-left: -5px;*/
 	vertical-align: top;
 	background: #007ac2;
 	/*padding: 30px 0 0 30px;*/
@@ -415,6 +427,11 @@ body, html
 {
 	text-decoration: underline;
 }
+.content_block_3_2 #btn_text_04:hover
+{
+	color: #f6ff00;
+}
+
 
 .content_block_3_2 > img
 {
@@ -476,3 +493,12 @@ body, html
 }
 
 /* ======== Footer elements ======= */
+.footer_block
+{
+	display: inline-block;
+	width: 326px;
+	margin: 20px 0; 
+	background: green;
+	color: #ffffff;
+}
+

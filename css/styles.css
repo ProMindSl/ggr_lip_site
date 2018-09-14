@@ -507,7 +507,8 @@ body, html
 }
 .footer_block:nth-child(3)
 {
-	text-align: right;
+	padding-left:180px;
+	text-align: left;
 }
 .footer_block > p > a
 {
@@ -527,7 +528,7 @@ body, html
 	visibility: hidden;
 	position: relative;
 	top:3px;
-	margin-right: 5px;
+	margin-left: 5px;
 }
 .footer_block > .btn:hover > img
 {

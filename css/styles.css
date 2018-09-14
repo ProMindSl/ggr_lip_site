@@ -22,7 +22,6 @@ body, html
   clear: both;
 }*/
 
-
 /* ========== Fonts ========== */
 .font_label
 {
@@ -205,7 +204,7 @@ body, html
 	/*height: 40px;*/
 	margin-left: 20px;
 	vertical-align: middle;
-	color: #81848c;
+	color: #5a5858;
 	font-family: Tahoma; /*Tahoma;"open sans", sans-serif;*/
 	text-transform: none;
 	font-size: 15.5px;
@@ -259,27 +258,6 @@ body, html
 {
 	font-size: 0;
 }
-
-
-
-/*.cont_b_conteiner_1
-{
-
-	height: 600px;
-	background: green;
-}
-.cont_b_container_2
-{
-	height: 447px;
-	background: black;
-}
-.cont_b_container_3
-{
-	/*height: 259px;*/
-	/*background: yellow;*/
-/*}*/
-
-
 
 .content_block_1
 {

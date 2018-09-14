@@ -4,7 +4,7 @@ window.onload = function()
 };
 
 
-/* bg scrolling*/
+/* Скроллинг bg*/
 function bgMove() /* start position of bg is -80px*/
 {
 	let scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -17,11 +17,6 @@ function getNumFromBgPosString(posString)
 {
 	let symbols = posString.split('');
 	let num = '';
-	/*symbols.forEach(function(item)
-	{
-		if (item == 'p') return nums;
-		nums.push(item);
-	});*/
 
 	for(let i=0; i<symbols.length; i++)
 	{
@@ -30,4 +25,18 @@ function getNumFromBgPosString(posString)
 	}
 	return num;
 }
+
+$(function() /* Возврат экрана в top */
+{
+	$(window).scroll(function() 
+	{
+ 		if($(this).scrollTop() != 0) $('#toTop').fadeIn();
+ 		else $('#toTop').fadeOut();
+  	});
+ 
+	$('#toTop').click(function() 
+	{
+ 		$('body,html').animate({scrollTop:0},800);
+ 	});
+});
 

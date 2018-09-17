@@ -1,3 +1,14 @@
+:root
+{
+	--color_gasprom: #007ac2;
+	--color_gasprom_dark: #00629b;
+	--color_gray: #aca298;
+	--color_gray_dark: #7f7871;
+	--color_gray94: #f0f0f0;
+	--color_grayb2: #b2b2b2;
+	--color_main_cont_text: #555353;
+}
+
 body, html 
 {
 	width: 100%;
@@ -10,11 +21,11 @@ body, html
 	color: #ffffff;
 }
 
-/* ======= Parent class ======= */
+/* ======= Virtual class ======= */
 .btn
 {
 	cursor: pointer;
-	transition: color 0.4s ease 0s;
+	/*transition: color 0.4s ease 0s;*/
 }
 /*.:after {
   content: "";
@@ -29,12 +40,10 @@ body, html
 .font_label
 {
     font: normal normal normal 22px/1.4em serif;
-    color: #555353;
-
 }
-.font_p {
+.font_p 
+{
     font: normal normal normal 15px/1.4em 'open sans',sans-serif;
-    color: #555353;
 }
 
 .font_small_cont
@@ -48,34 +57,71 @@ body, html
 /* ========== Colors ========== */
 .colorbg_gaspr_blue
 {
-	background: #007ac2;
+	background-color: var(--color_gasprom);
 }
 
 .colorbg_gaspr_blue_hover
 {
-	background: #007ac2;
+	background-color: var(--color_gasprom);
 	transition: background-color 0.4s ease 0s;
 }
 .colorbg_gaspr_blue_hover:hover
 {
-	background-color: #00629b;
+	background-color: var(--color_gasprom_dark);
 	transition: background-color 0.4s ease 0s;
 }
 
 .colorbg_gray
 {
-	background: #aca298;
+	background-color: var(--color_gray);
 }
 
 .colorbg_gray_hover
 {
-	background: #aca298;
+	background-color: var(--color_gray);
 	transition: background-color 0.4s ease 0s;
 }
 .colorbg_gray_hover:hover
 {
-	background: #7f7871;
+	background-color: var(--color_gray_dark);
 	transition: background-color 0.4s ease 0s;
+}
+
+.colorbg_gray94
+{
+	background-color: var(--color_gray94);
+}
+
+.colorfont_main_cont_text
+{
+	color: var(--color_main_cont_text);
+}
+
+.colorfont_main_cont_text_hover
+{
+	color: var(--color_main_cont_text);
+	transition: color 0.4s ease 0s;
+}
+.colorfont_main_cont_text_hover:hover
+{
+	color: var(--color_grayb2);
+	transition: color 0.4s ease 0s;
+}
+
+.colorfont_gaspr_blue
+{
+	color: var(--color_gasprom);
+}
+
+.colorfont_gaspr_blue_hover
+{
+	color: var(--color_gasprom);
+	transition: color 0.4s ease 0s;
+}
+.colorfont_gaspr_blue_hover:hover
+{
+	color: var(--color_grayb2);
+	transition: color 0.4s ease 0s;
 }
 
 /* ======== View Containers ======= */
@@ -97,7 +143,7 @@ body, html
   clear: both;
 }*/
 
-/* ======== MAIN PAGE parts ======= */
+/* ======== PAGE parts ======= */
 .upper
 {
 	position: fixed;
@@ -350,7 +396,6 @@ body, html
 	height: 447px;
 	width: 610px;
 	text-align: left;
-	background: #f0f0f0;
 	vertical-align: top;
 }
 
@@ -373,15 +418,11 @@ body, html
 	display: inline-block;
     font: normal normal normal 17px/1.4em serif;
     transition: color 0.4s ease 0s;
-    color: #007ac2;
     white-space: nowrap;
     display: inline-block;
     margin: 30px 0 100px 100px;
 }
-.cont_bl_2_2_btn:hover
-{
-	color: #b2b2b2 ;
-}
+
 
 .content_block_3_1_btn
 {
@@ -465,7 +506,6 @@ body, html
 	height: 299px;
 	width: 383px;
 	text-align: left;
-	background: #f0f0f0;
 	vertical-align: top;
 }
 .content_block_5_2 > h6
@@ -475,11 +515,6 @@ body, html
 .content_block_5_2 > p
 {
 	margin: 0 70px 70px 70px;
-}
-
-.content_block_5_2 > p > ins:hover
-{
-	color: #bab6b6;
 }
 
 .content_block_5_3_pic

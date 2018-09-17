@@ -7,6 +7,8 @@
 	--color_gray94: #f0f0f0;
 	--color_grayb2: #b2b2b2;
 	--color_main_cont_text: #555353;
+
+	/*старый цвет кнопок меню color: #5a5858;*/
 }
 
 body, html 
@@ -25,7 +27,6 @@ body, html
 .btn
 {
 	cursor: pointer;
-	/*transition: color 0.4s ease 0s;*/
 }
 /*.:after {
   content: "";
@@ -34,13 +35,12 @@ body, html
 }*/
 
 
-
-
 /* ========== Fonts ========== */
 .font_label
 {
     font: normal normal normal 22px/1.4em serif;
 }
+
 .font_p 
 {
     font: normal normal normal 15px/1.4em 'open sans',sans-serif;
@@ -50,7 +50,6 @@ body, html
 {
 	font-family: Tahoma;
 	font-size: 12px;
-	/*font-size: 0.9em;*/
 	line-height: 17px;
 }
 
@@ -92,6 +91,11 @@ body, html
 	background-color: var(--color_gray94);
 }
 
+.colorbg_white
+{
+	background-color: #ffffff;
+}
+
 .colorfont_main_cont_text
 {
 	color: var(--color_main_cont_text);
@@ -124,6 +128,11 @@ body, html
 	transition: color 0.4s ease 0s;
 }
 
+.colorfont_white
+{
+	color: #ffffff;
+}
+
 /* ======== View Containers ======= */
 .bg_container
 {
@@ -151,8 +160,6 @@ body, html
     left: 0px;
 	height: 40px;
 	width: 100%;
-	color: white;
-	background: white;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
@@ -171,7 +178,6 @@ body, html
 
 .footer
 {
-
 }
 
 /* ======== BG parts ======= */
@@ -191,7 +197,6 @@ body, html
 	position: absolute;
 	width: 100%;
 	height: 100px;
-	background: #ffffff;
 }
 
 .bg_content_second
@@ -200,7 +205,6 @@ body, html
 	top: 600px;
 	width: 100%;
 	height: 1881px;
-	background: rgba(250, 250, 255, 0.8);
 }
 
 .bg_footer
@@ -208,7 +212,6 @@ body, html
 	position: absolute;
 	width: 100%;
 	min-height: 135px;
-	background: #007ac2;;
 }
 
 /* ======== Main parts ======= */
@@ -227,9 +230,7 @@ body, html
 {
 	height: 2481px;
 	width: 980px;
-	background: white;
 	background: rgba(208, 228, 242, 0);
-	color: black;
 	text-align: center;
 	text-transform: none;
 }
@@ -239,7 +240,6 @@ body, html
     width: 980px;
     box-sizing: border-box;
     min-height: 125px;
-	background: #007ac2;
     font-size: 0;
     text-align: left;
     padding: 20px 0 20px 0;
@@ -253,11 +253,6 @@ body, html
 	height: 110px;
 }
 
-.main_logo_container
-{	
-	/*background: #007ac2;*/
-}
-
 .gasprom_logo
 {
 	position: inherit;
@@ -266,7 +261,7 @@ body, html
 	left: 0;
 	right: 0;
 	margin: auto;
-	background: #007ac2 url("../images/gasprom_lip_logo.svg") no-repeat;
+	background: var(--color_gasprom) url("../images/gasprom_lip_logo.svg") no-repeat;
 	width: 180px;
 	height: 86px;
 }
@@ -285,23 +280,15 @@ body, html
 	/*height: 40px;*/
 	margin-left: 20px;
 	vertical-align: middle;
-	color: #5a5858;
 	font-family: Tahoma; /*Tahoma;"open sans", sans-serif;*/
 	text-transform: none;
 	font-size: 15.5px;
-	transition: color 0.4s ease 0s;
 }
 
 .menu_btn:nth-child(1)
 {
 	margin-left: 40px;
 }
-
-.menu_btn:hover
-{
-	color: #b9bec9;
-}
-
 
 .social_btn_container
 {
@@ -317,14 +304,9 @@ body, html
 	/*background-color: red;*/
 }
 
-.social_btn img
+.social_btn > img
 {
 	vertical-align: middle;
-}
-
-.btn_vk
-{
-	background-image: url("../images/btn_vk.webp");
 }
 
 /* ======== Content elements ======= */
@@ -344,7 +326,7 @@ body, html
 	position: relative;
 	width: 370px;
 	height: 600px;
-	background-color: rgba(250, 250, 250, 0.7);
+	background-color: rgba(250, 250, 250, 0.7); /*нестандартный цвет фона не опредляется классом*/
 	text-align: center;
 }
 
@@ -352,14 +334,13 @@ body, html
 {
 	display: inline-block;
 	width: 225px;
-	height: 250px;
+	min-height: 250px;
 	margin: 120px auto;
 
 	font-family: serif;
 	font-size: 36px;
 	line-height: 1.2em;/*43.2px;*/
 	font-weight: 400px;
-	color: #555353;
 	text-align: left;
 }
 
@@ -371,8 +352,6 @@ body, html
 	height: 46px;
 	bottom: 120px;
 	left: 75px;
-	color: #ffffff;
-	font: normal normal normal 15px/1.4em 'open sans',sans-serif;
 	text-align: center;
 	padding: 12px 0 0 0;
 
@@ -381,7 +360,6 @@ body, html
 .content_block_2_1
 {
 	display: inline-block;
-	/*float: left;*/
 	width: 370px;
 	height: 447px;
 	margin-right: -1px;
@@ -392,7 +370,6 @@ body, html
 .content_block_2_2
 {
 	display: inline-block;
-	/*float: left;*/
 	height: 447px;
 	width: 610px;
 	text-align: left;
@@ -406,7 +383,6 @@ body, html
 	min-height: 165px;
 	margin: 85px 0 auto 100px;
 	text-align: left;
-	
 }
 .cont_bl_2_2_text h6
 {
@@ -416,10 +392,7 @@ body, html
 .cont_bl_2_2_btn
 {
 	display: inline-block;
-    font: normal normal normal 17px/1.4em serif;
-    transition: color 0.4s ease 0s;
-    white-space: nowrap;
-    display: inline-block;
+    font: normal normal normal 17px/1.4em serif; /*нестандартный шрифт кнопки*/
     margin: 30px 0 100px 100px;
 }
 
@@ -434,8 +407,6 @@ body, html
 	vertical-align: top;
 	text-align: center;
 	padding: 53px 0 0 0;
-	font: normal normal normal 22px/1.4em serif;
-	color: #ffffff;
 }
 
 .content_block_3_2
@@ -450,17 +421,14 @@ body, html
 .content_block_3_2 > .font_label
 {
 	margin: 55px 80px 0 80px;
-	color: #ffffff;
 }
 .content_block_3_2 > .font_p:nth-child(2)
 {
 	margin: 20px 80px 0 80px;
-	color: #ffffff;
 }
 .content_block_3_2 > .font_p
 {
 	margin: 4px 80px 0 80px;
-	color: #ffffff;
 }
 .content_block_3_2 > .font_p:hover
 {
@@ -468,7 +436,7 @@ body, html
 }
 .content_block_3_2 > #btn_text_04:hover
 {
-	color: #f6ff00;
+	color: #f6ff00; /*нестандартный цвет кнопки "При запахе газа"*/
 }
 
 
@@ -495,8 +463,6 @@ body, html
 	vertical-align: top;
 	text-align: center;
 	padding: 43px 0 0 0;
-	font: normal normal normal 22px/1.4em serif;
-	color: #ffffff;
 }
 
 .content_block_5_2
@@ -531,7 +497,6 @@ body, html
 	display: inline-block;
 	width: 326px;
 	vertical-align: top; 
-	color: #ffffff;
 	box-sizing: border-box;
 }
 .footer_block:nth-child(2)

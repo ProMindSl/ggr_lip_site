@@ -45,6 +45,38 @@ body, html
 	line-height: 17px;
 }
 
+/* ========== Colors ========== */
+.colorbg_gaspr_blue
+{
+	background: #007ac2;
+}
+
+.colorbg_gaspr_blue_hover
+{
+	background: #007ac2;
+	transition: background-color 0.4s ease 0s;
+}
+.colorbg_gaspr_blue_hover:hover
+{
+	background-color: #00629b;
+	transition: background-color 0.4s ease 0s;
+}
+
+.colorbg_gray
+{
+	background: #aca298;
+}
+
+.colorbg_gray_hover
+{
+	background: #aca298;
+	transition: background-color 0.4s ease 0s;
+}
+.colorbg_gray_hover:hover
+{
+	background: #7f7871;
+	transition: background-color 0.4s ease 0s;
+}
 
 /* ======== View Containers ======= */
 .bg_container
@@ -65,7 +97,7 @@ body, html
   clear: both;
 }*/
 
-/* ======== Site Parts ======= */
+/* ======== MAIN PAGE parts ======= */
 .upper
 {
 	position: fixed;
@@ -177,7 +209,7 @@ body, html
 
 .main_logo_container
 {	
-	background: #007ac2;
+	/*background: #007ac2;*/
 }
 
 .gasprom_logo
@@ -249,7 +281,6 @@ body, html
 	background-image: url("../images/btn_vk.webp");
 }
 
-
 /* ======== Content elements ======= */
 .content_blok_container
 {
@@ -294,17 +325,11 @@ body, html
 	height: 46px;
 	bottom: 120px;
 	left: 75px;
-	transition: color 0.4s ease 0s;
-	background-color: #007ac2;
 	color: #ffffff;
 	font: normal normal normal 15px/1.4em 'open sans',sans-serif;
 	text-align: center;
 	padding: 12px 0 0 0;
 
-}
-.cont_bl_1_btn:hover
-{
-	background-color: #00629b;
 }
 
 .content_block_2_1
@@ -366,15 +391,10 @@ body, html
 	height: 148px;
 	margin-left: 222px;
 	vertical-align: top;
-	background: #aca298;
 	text-align: center;
 	padding: 53px 0 0 0;
 	font: normal normal normal 22px/1.4em serif;
 	color: #ffffff;
-}
-.content_block_3_1_btn:hover
-{
-	background: #7f7871;
 }
 
 .content_block_3_2
@@ -383,32 +403,29 @@ body, html
 	box-sizing: border-box;
 	width: 470px;
 	height: 259px;
-	/*margin-left: -5px;*/
 	vertical-align: top;
-	background: #007ac2;
-	/*padding: 30px 0 0 30px;*/
 	text-align: left;
 }
-.content_block_3_2 .font_label
+.content_block_3_2 > .font_label
 {
 	margin: 55px 80px 0 80px;
 	color: #ffffff;
 }
-.content_block_3_2 .font_p:nth-child(2)
+.content_block_3_2 > .font_p:nth-child(2)
 {
 	margin: 20px 80px 0 80px;
 	color: #ffffff;
 }
-.content_block_3_2 .font_p
+.content_block_3_2 > .font_p
 {
 	margin: 4px 80px 0 80px;
 	color: #ffffff;
 }
-.content_block_3_2 .font_p:hover
+.content_block_3_2 > .font_p:hover
 {
 	text-decoration: underline;
 }
-.content_block_3_2 #btn_text_04:hover
+.content_block_3_2 > #btn_text_04:hover
 {
 	color: #f6ff00;
 }
@@ -435,15 +452,10 @@ body, html
 	width: 148px;
 	height: 148px;
 	vertical-align: top;
-	background: #007ac2;
 	text-align: center;
 	padding: 43px 0 0 0;
 	font: normal normal normal 22px/1.4em serif;
 	color: #ffffff;
-}
-.content_block_5_1_btn:hover
-{
-	background: #00629b;;
 }
 
 .content_block_5_2
@@ -467,7 +479,7 @@ body, html
 
 .content_block_5_2 > p > ins:hover
 {
-	background: green;
+	color: #bab6b6;
 }
 
 .content_block_5_3_pic
@@ -475,7 +487,7 @@ body, html
 	float: right;
 	width: 468px;
 	height: 560px;
-	background: red url("../images/cont_bl_5_pic.jpg") no-repeat;
+	background: #ffffff url("../images/cont_bl_5_pic.jpg") no-repeat;
 }
 
 /* ======== Footer elements ======= */

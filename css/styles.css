@@ -432,15 +432,23 @@ body, html
 }
 .content_block_3_2 > #btn_text_04:hover
 {
-	color: #f6ff00; /*нестандартный цвет кнопки "При запахе газа"*/
+	color: #f6ff00; /*нестандартный цвет кнопки "При запахе газа"*/	
 }
-
 
 .content_block_3_2 > img
 {
 	position: relative;
 	top: 5px;
 	margin: 0 0 0 -70px;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+.content_block_3_2 > #btn_text_04:hover .content_block_3_2 > img
+{
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0s;
 }
 
 .content_block_4_pic

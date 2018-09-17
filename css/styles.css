@@ -191,7 +191,6 @@ body, html
 	
 }
 
-
 .bg_header
 {
 	position: absolute;
@@ -224,7 +223,6 @@ body, html
 	text-align: center;
 	text-transform: uppercase;
 }
-
 
 .cont_cont
 {
@@ -376,7 +374,6 @@ body, html
 	vertical-align: top;
 }
 
-
 .cont_bl_2_2_text
 {
 	width: 402px;
@@ -395,7 +392,6 @@ body, html
     font: normal normal normal 17px/1.4em serif; /*нестандартный шрифт кнопки*/
     margin: 30px 0 100px 100px;
 }
-
 
 .content_block_3_1_btn
 {
@@ -523,12 +519,16 @@ body, html
 }
 .footer_block > .btn > img
 {
+	opacity: 0;
 	visibility: hidden;
 	position: relative;
 	top:3px;
 	margin-left: 5px;
+	transition: opacity 0.3s, visibility 0s linear 0.3s;
 }
 .footer_block > .btn:hover > img
 {
+	opacity: 1;
 	visibility: visible;
+	transition-delay: 0s;
 }

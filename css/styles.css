@@ -444,7 +444,7 @@ body, html
 	visibility: hidden;
 	transition: opacity 0.3s, visibility 0s linear 0.3s;
 }
-.content_block_3_2 > #btn_text_04:hover .content_block_3_2 > img
+.content_block_3_2 > #btn_text_04:hover ~ .content_block_3_2 > img
 {
 	opacity: 1;
 	visibility: visible;

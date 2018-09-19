@@ -54,6 +54,22 @@ body, html
 }
 
 /* ========== Colors ========== */
+.colorbg_main_cont_text
+{
+	background-color: var(--color_main_cont_text);
+}
+
+.colorbg_main_cont_text_hover
+{
+	background-color: var(--color_main_cont_text);
+	transition: color 0.4s ease 0s;
+}
+.colorbg_main_cont_text_hover:hover
+{
+	background-color: var(--color_grayb2);
+	transition: color 0.4s ease 0s;
+}
+
 .colorbg_gaspr_blue
 {
 	background-color: var(--color_gasprom);
@@ -544,21 +560,36 @@ body, html
 
 /* ======== Upper elements ======= */
 
-.ico-menu {
+.ico-circle
+{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	font-size: 0;
+	text-align: center;
+	margin: 10px 0 0 10px;
+	background: green;
+}
+
+.ico-menu 
+{
     position: relative;
     display: inline-block;
     width: 15px;
     height: 13px;
     background: red;
-    
-    margin: 10px 0 0 10px;
+    font-size: 0;
+    /*margin: 10px 0 0 10px;*/
+    vertical-align: bottom;
 }
 
-.ico-menu > .bar {
-    position: absolute;
+.ico-menu > .bar 
+{
+    display: inline-block;
     width: 100%;
     height: 2px;
-    background-color: #202121;
+    /*background-color: #202121;*/
     border-radius: 2px;
     overflow: hidden;
+    margin-top: 2px;
 }

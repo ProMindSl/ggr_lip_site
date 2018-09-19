@@ -563,12 +563,13 @@ body, html
 .ico-circle
 {
 	display: inline-block;
-	width: 20px;
-	height: 20px;
+	width: 25px;
+	height: 25px;
 	font-size: 0;
 	text-align: center;
 	margin: 10px 0 0 10px;
 	background: green;
+	border-radius: 50%;
 }
 
 .ico-menu 
@@ -580,7 +581,7 @@ body, html
     background: red;
     font-size: 0;
     /*margin: 10px 0 0 10px;*/
-    vertical-align: bottom;
+    vertical-align: middle;
 }
 
 .ico-menu > .bar 

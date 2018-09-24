@@ -1,0 +1,11 @@
+.header {
+  
+  &__content {
+
+    /* Пример медиа-запроса. Подробнее здесь: https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints */
+    
+    @include media-breakpoint-down(md) {
+//      padding: 10px 0;
+    }
+  }
+ }

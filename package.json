@@ -1,0 +1,22 @@
+{
+  "name": "ggr_site",
+  "version": "1.0.0",
+  "description": "GGR Lipetsk filial site based on bootstrap framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProMindSl/ggr_lip_site.git"
+  },
+  "author": "Slava Avdeev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProMindSl/ggr_lip_site/issues"
+  },
+  "homepage": "https://github.com/ProMindSl/ggr_lip_site#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
